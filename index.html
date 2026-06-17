@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Minimal developer portfolio with projects, stack, services, notes, and contacts."
+    />
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">~/</span>
+        <span data-i18n="brand">dev.portfolio</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#stack" data-i18n="navStack">Stack</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="language-switch" aria-label="Language switcher">
+        <button class="lang-btn active" type="button" data-lang="uk">UA</button>
+        <button class="lang-btn" type="button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroStatus">Available for work</p>
+          <h1 data-i18n="heroTitle">Developer who builds calm, fast, useful interfaces.</h1>
+          <p class="hero-text" data-i18n="heroText">
+            I turn ideas into polished web products: clean UI, reliable logic, and details that make the page feel alive.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="btn primary" href="#projects" data-i18n="seeProjects">View projects</a>
+            <a class="btn ghost" href="mailto:hello@example.com" data-i18n="contactMe">Contact me</a>
+          </div>
+        </div>
+
+        <aside class="terminal" aria-label="Portfolio terminal preview">
+          <div class="terminal-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>portfolio.sh</p>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="terminal-output" data-i18n="terminalName">frontend developer / creative coder</p>
+            <p><span class="prompt">$</span> status</p>
+            <p class="terminal-output success" data-i18n="terminalStatus">open to product teams and freelance work</p>
+            <p><span class="prompt">$</span> run showcase</p>
+            <p class="terminal-output typing" data-i18n="terminalTyping">loading projects, stack, notes...</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="metrics section-shell" aria-label="Portfolio metrics">
+        <div>
+          <strong>12+</strong>
+          <span data-i18n="metricProjects">finished projects</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span data-i18n="metricYears">years learning and building</span>
+        </div>
+        <div>
+          <strong>24h</strong>
+          <span data-i18n="metricReply">average reply time</span>
+        </div>
+      </section>
+
+      <section class="section-shell split" id="about">
+        <div>
+          <p class="section-kicker" data-i18n="aboutKicker">About</p>
+          <h2 data-i18n="aboutTitle">Focused on interfaces that are easy to use and hard to ignore.</h2>
+        </div>
+        <p data-i18n="aboutText">
+          This is a placeholder bio. Write a few sharp sentences about what you build, how you think, and what kind of teams or clients you want to work with.
+        </p>
+      </section>
+
+      <section class="section-shell" id="projects">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker" data-i18n="projectsKicker">Selected work</p>
+            <h2 data-i18n="projectsTitle">Projects worth showing first.</h2>
+          </div>
+          <a href="https://github.com/" target="_blank" rel="noreferrer" data-i18n="allProjects">GitHub</a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span>01</span>
+              <span>React / API / UI</span>
+            </div>
+            <h3 data-i18n="projectOneTitle">Finance dashboard</h3>
+            <p data-i18n="projectOneText">A clean analytics panel with charts, filters, and reusable UI components.</p>
+            <a href="#" data-i18n="openCase">Open case</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>02</span>
+              <span>JS / Automation</span>
+            </div>
+            <h3 data-i18n="projectTwoTitle">Telegram workflow bot</h3>
+            <p data-i18n="projectTwoText">A small automation tool for collecting requests and sending structured updates.</p>
+            <a href="#" data-i18n="openCase">Open case</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>03</span>
+              <span>HTML / CSS / Motion</span>
+            </div>
+            <h3 data-i18n="projectThreeTitle">Personal landing page</h3>
+            <p data-i18n="projectThreeText">A fast portfolio page with bilingual content and subtle terminal-inspired motion.</p>
+            <a href="#" data-i18n="openCase">Open case</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="stack">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker" data-i18n="stackKicker">Stack</p>
+            <h2 data-i18n="stackTitle">Tools I like to ship with.</h2>
+          </div>
+        </div>
+
+        <div class="tag-cloud" aria-label="Technology stack">
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>Node.js</span>
+          <span>REST API</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Git</span>
+          <span>Figma</span>
+        </div>
+      </section>
+
+      <section class="section-shell services" id="services">
+        <div>
+          <p class="section-kicker" data-i18n="servicesKicker">Services</p>
+          <h2 data-i18n="servicesTitle">What I can help with.</h2>
+        </div>
+        <div class="service-list">
+          <div>
+            <span>01</span>
+            <p data-i18n="serviceOne">Landing pages and portfolios</p>
+          </div>
+          <div>
+            <span>02</span>
+            <p data-i18n="serviceTwo">Frontend features and UI systems</p>
+          </div>
+          <div>
+            <span>03</span>
+            <p data-i18n="serviceThree">Automation scripts and small tools</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell now">
+        <div>
+          <p class="section-kicker" data-i18n="nowKicker">Now</p>
+          <h2 data-i18n="nowTitle">Currently learning and building.</h2>
+        </div>
+        <ul>
+          <li data-i18n="nowOne">Improving product thinking and frontend architecture.</li>
+          <li data-i18n="nowTwo">Building portfolio projects with real-world workflows.</li>
+          <li data-i18n="nowThree">Exploring motion, accessibility, and performance details.</li>
+        </ul>
+      </section>
+
+      <section class="section-shell notes" id="notes">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker" data-i18n="notesKicker">Notes</p>
+            <h2 data-i18n="notesTitle">Short thoughts from the workbench.</h2>
+          </div>
+        </div>
+        <div class="note-row">
+          <a href="#" data-i18n="noteOne">How I approach a new interface</a>
+          <a href="#" data-i18n="noteTwo">Things I learned while building bots</a>
+          <a href="#" data-i18n="noteThree">Why small details make products feel premium</a>
+        </div>
+      </section>
+
+      <section class="section-shell contact" id="contact">
+        <div>
+          <p class="section-kicker" data-i18n="contactKicker">Contact</p>
+          <h2 data-i18n="contactTitle">Have a role, project, or idea?</h2>
+          <p data-i18n="contactText">Send the context, timeline, and links. I will reply when there is a real fit.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span data-i18n="footer">Built with HTML, CSS, JS. Designed to be edited.</span>
+      <a href="#top">↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
